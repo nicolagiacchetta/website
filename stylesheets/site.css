@@ -1,0 +1,244 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*	
+	Questo invece l'ho fatto io :)
+*/
+
+
+@font-face {
+	font-family: 'monospace';
+	src: url("fonts/Anonymous-Pro/Anonymous-Pro.ttf")  format('truetype');
+}
+
+@font-face {
+    font-family: 'anonymous_proregular';
+    src: url('fonts/Anonymous-Pro-regular/anonymous_pro-webfont.woff2') format('woff2'),
+         url('fonts/Anonymous-Pro-regular/anonymous_pro-webfont.woff') format('woff');
+
+
+}
+
+html {
+    font-family: monospace, anonymous_proregular;
+    font-size: 14px;
+/*    margin-left: 5%;
+    margin-right:5%;*/
+    background-color:white;
+    
+}
+
+body{
+    width: 100%;
+
+}
+
+@media only screen and (min-width: 1300px){
+    html {
+        font-size: 16px;    
+    }
+    #main {
+     width: 1170px;
+    } 
+}
+
+@media only screen and (max-width: 1300px){
+   #main{
+        width: 1170px;
+    } 
+}
+
+@media only screen and (max-width: 1200px){
+    html {
+        font-size: 14px;    
+    }
+   #main{
+     width: 970px;
+     padding: 0 20px;
+    } 
+}
+
+@media only screen and (max-width: 992px){
+    html {
+        font-size: 13px;    
+    }
+
+   #main{
+     width: 970px;
+     padding: 0 20px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    html {
+        font-size: 12px;    
+    }
+   #main{
+     width: 750px;
+     padding: 0 20px;
+    }   
+}
+
+@media only screen and (max-width: 500px){
+    html {
+        font-size: 11px;    
+    }
+}
+
+
+
+#main{
+     padding-top:1%;
+     padding-bottom: 55px;
+     margin-right: auto;
+     margin-left: auto;
+}
+
+a:link, a:visited, a:hover,a:active {
+    text-decoration: none;
+    color: #0618bd;
+}
+
+.keywords{
+    color: #8c2467;
+}
+
+.variables{
+    color: #0618bd;
+}
+
+.annotations{
+    color: #646464;
+}
+
+.javadoc{
+    color: #4173d6;
+}
+
+.javadoc-annotations{
+    color: #b2c5d7;
+}
+
+.javadoc-links{
+    color: #4173d6 !important; 
+}
+
+.parameters{
+    color: #693e3f;
+}
+
+.constants{
+    color: #0618bd;
+}
+
+.strings{
+    color: #0618bd;
+}
+
+.comments{
+    color: #417e60;
+}
+
+.numbers{
+    color: #8a8a8a;
+    font-size: 11px;
+}
+
+#container{
+    position:relative;
+    display: inline;
+    margin-left: -18px;
+}
+
+.warnings{
+     border-bottom: 2px dotted #f3c740;
+}
+
+.warnings img{
+    position:absolute;
+    visibility:hidden;
+    width: 300px;
+    
+}
+
+.warnings:hover img { 
+	visibility:visible;
+	top:17px; left:-40px; 
+}
+
+footer{
+    line-height: 30px;
+    position:fixed; 
+    bottom: 0px; 
+    width: 100%;
+    height: 39px; 
+    background-color:white;
+
+}
+
+#footer-content{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.borderline.st 	{ background-color: #8c2467; }
+.borderline.nd 	{ background-color: #417e60; }
+.borderline.rd 	{ background-color: #0618bd; }
+
+.borderline {
+	height: 2px;
+	width: 100%;
+	display: block;
+}
+
+.theme-icon{
+    margin-top: 0px;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+      <title>NicolaGiacchetta.class</title>
+      <meta name="description" content="Computer Engineer • hello (at) nicolagiacchetta.it" />
+      <meta name="author" content="Nicola Giacchetta" />
+      <meta name="keywords" content="Nicola Giacchetta, computer engineer, software developer, software engineer, software, java, personal page">
+      <link rel="icon" href="icons/class.svg" type="image/x-icon" id="icon"/>
+      <link rel="stylesheet" type="text/css" href="stylesheets/site.css" id="default"/>
+      <link rel="stylesheet" type="text/css" href="stylesheets/idea.css"  id="darcula"  title="darcula"/>
+   </head>
+   <body>
+<!--       <script>
+         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+         
+         ga('create', 'UA-43845743-1', 'nicolagiacchetta.it');
+         ga('send', 'pageview');
+         
+      </script> -->
+      <header>                   
+      </header>
+      <div id="main">
+         <span class="keywords">package</span> it.nicolagiacchetta;<br>
+         <br>
+         <span class="keywords">import</span> java.util.ArrayList;<br>
+         <br>
+         <br>
+         <span class="javadoc">/**<br>
+         &nbsp;* The NicolaGiacchetta class implements a set of functionalities to<br>
+         &nbsp;* display some information about Nicola Giacchetta. <br>
+         &nbsp;*<br>
+         &nbsp;* <span class="javadoc-annotations">@author</span>  Nicola Giacchetta<br>
+         &nbsp;* <span class="javadoc-annotations">@version</span> 106.0.2<br>
+         &nbsp;* <span class="javadoc-annotations">@since</span>   1988-12-08<br>
+         &nbsp;* <span class="javadoc-annotations">@see</span>     <a href="http://www.nicolagiacchetta.it/resume.pdf" target="_blank" class="javadoc-links">resume</a>, <a href="https://www.linkedin.com/in/nicolagiacchetta/" target="_blank" class="javadoc-links">linkedin</a>, <a href="https://github.com/nicolagiacchetta" target="_blank" class="javadoc-links">github</a>, <a href="https://www.flickr.com/photos/nicolagiacchetta" target="_blank" class="javadoc-links">flickr</a>, <a href="https://open.spotify.com/user/1171479957" target="_blank" class="javadoc-links">spotify</a>, <a href="https://www.discogs.com/user/little_jacket/collection" target="_blank" class="javadoc-links">discogs</a><br>
+         &nbsp;*/<br>
+         </span>
+         <span class="keywords">public final class</span> NicolaGiacchetta <span class="keywords">extends</span>  Italian <span class="keywords">implements</span>  ComputerEngineer {<br><br>
+         <div style="padding-left:2em;">
+            <span class="keywords">private static final</span> NicolaGiacchetta <span class="constants">INSTANCE</span> = <span class="keywords">new</span> NicolaGiacchetta(Names.<span class="constants">NICOLA</span>);<br>
+            <span class="keywords">private static final</span> String <span class="constants">EMAIL</span> = <span class="strings">"<a href="mailto:hello@nicolagiacchetta.it?Subject=Hello%20Nicola!" target="_top">hello@nicolagiacchetta.it</a>"</span>;<br><br>   
+            <span class="keywords">public enum</span> Names {<br>
+            <span style="padding-left:2em;" class="constants">NICOLA</span>, <span class="constants">NICK</span>, <span class="constants">NICO</span>, <span class="constants">BÊTE</span>, <span class="constants">SPAGHETTI</span>, <span class="constants">GIACCHETTA</span>, <span class="constants">SACCHETTA</span>, <span class="constants">GIACCA</span>, <span class="constants">GIACCHÉ</span>, <span class="constants">BOU</span>, <span class="constants">STRUNZ</span><br>
+            }<br><br>
+            <span class="keywords">public</span> Names <span class="variables">name</span>;<br>
+            <span class="keywords">private</span> ArrayList&lt;String&gt; 
+            <span class="variables warnings">
+               flaws;<div id="container"><img id="img-warn" src="assets/idea-warn.png" alt=""></div>
+            </span><br><br>
+            <span class="comments">// Private constructor </span><br>
+            <span class="keywords">private</span> NicolaGiacchetta(Names <span class="parameters">name</span>) {<br>
+            <span style="padding-left:2em;" class="keywords">this</span><span class="variables">.name</span> = <span class="parameters">name</span>;<br>
+            <span style="padding-left:2em;" class="keywords">this</span><span class="variables">.strictPizzaAndPastaDiet</span>  = <span class="keywords">true</span>;<br> 
+            }<br><br>
+            <span class="keywords">public static</span> NicolaGiacchetta getInstance() {<br>
+            <span style="padding-left:2em;" class="keywords">return</span> <span class="constants">INSTANCE</span>;<br>
+            }<br><br>
+            <span class="keywords">public static</span> String getEmail() {<br>
+            <span style="padding-left:2em;" class="keywords">return</span> <span class="constants">EMAIL</span>;<br>
+            }<br><br>
+            <span class="annotations">@Override</span><br>
+            <span class="keywords">public</span> String currentlyBasedIn() {<br>
+            <span style="padding-left:2em;" class="keywords">return</span> <span class="strings">"<a href="https://goo.gl/maps/XXceDXpLAcE2" target="_blank">London (UK)</a>"</span>;<br>
+            }<br><br>
+            <span class="annotations">@Override</span><br>
+            <span class="keywords">public</span> String workingFor() {<br>
+            <span style="padding-left:2em;" class="keywords">return</span> <span class="strings">"<a href="https://www.nexmo.com/" target="_blank">Nexmo</a>"</span>;<br>
+            }<br>
+         </div>
+         <br>
+         }<br>    
+      </div>
+      <footer>
+         <div id="footer-content">
+            <div class="borderline rd"></div>
+            <div class="borderline nd"></div>
+            <div class="borderline st"></div>
+            © 1988 - All rights reserved - I'm sorry, NO cookies here | <a href="javascript:enableDarcula();">IntelliJ Theme <img class="theme-icon" width="20" src="icons/idea.png"></a> | <a href="javascript:enableEclipse();">Eclipse Theme <img class="theme-icon" width="20" src="icons/eclipse.png"></a>
+         </div>
+      </footer>
+      <script>
+         function enableDarcula() {
+           var darcula = document.getElementById('darcula'); 
+           darcula.disabled = false;
+
+           var def = document.getElementById('default');
+           def.disabled = true;
+
+           var img = document.getElementById('img-warn'); 
+           img.src = 'assets/idea-warn.png';
+
+           var ico = document.getElementById('icon'); 
+           ico.href = 'icons/class.svg';
+         }
+
+         function enableEclipse() {
+           var darcula = document.getElementById('default'); 
+           darcula.disabled = false;
+
+           var def = document.getElementById('darcula');
+           def.disabled = true;
+           
+           var img = document.getElementById('img-warn'); 
+           img.src = 'assets/warning.png';
+
+           var ico = document.getElementById('icon'); 
+           ico.href = 'icons/favicon.ico';
+         }
+      </script>
+   </body>
+</html>
+
